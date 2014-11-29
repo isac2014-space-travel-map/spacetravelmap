@@ -1,0 +1,101 @@
+{
+	"1":{
+    	"spot": "アポロ11号着陸地点",
+        "legend": "1969年7月20日に着陸し、歴史上初めて人類が月面に到達した記念すべき場所である。",
+        "latitude": "0.67408",
+        "longitude": "23.47297",
+        "url": "http://wms1.wms.selene.darts.isas.jaxa.jp/selene_viewer/jpn/observation_mission/hdtv/hdtv_051.html",
+        "imgurl": "http://wms1.wms.selene.darts.isas.jaxa.jp/selene_viewer/jpn/observation_mission/hdtv/051/hdtv_051_l.jpg",
+        "imgfilename":"hdtv_051_l.jpg"
+    },
+	"2":{
+        "spot": "かぐやラストショット撮影地点",
+        "legend": "月の起源と進化の解明を目的として2007年9月14日に打ち上げられ、2009年6月11日に月面に制御落下した。",
+        "latitude": "-89",
+        "longitude": "266",
+        "url": "http://wms1.wms.selene.darts.isas.jaxa.jp/selene_viewer/jpn/observation_mission/hdtv/hdtv_077.html",
+        "imgurl": "http://wms1.wms.selene.darts.isas.jaxa.jp/selene_viewer/jpn/observation_mission/hdtv/077/hdtv_077_1_l.jpg",
+        "imgfilename":"hdtv_077_1_l.jpg"
+    },
+	"3":{
+    	"spot": "クラビウスクレーター",
+        "legend": "直径225km、月面で最大級の大きさを誇るクレーターの一つです。クレーターの中に複数の小クレーターがあることで有名です。",
+        "latitude": "-58.4",
+        "longitude": "-14.4",
+        "url": "http://photojournal.jpl.nasa.gov/catalog/PIA12885",
+        "imgurl": "http://photojournal.jpl.nasa.gov/jpegMod/PIA12885_modest.jpg",
+        "imgfilename":"PIA12885_modest.jpg"
+    },
+	"4":{
+    	"spot": "ディンゴ・ギャップ",
+        "legend": "2014年2月、「桂歌丸師匠」とよく似た人面石が発見されています。",
+        "latitude": "-4.6",
+        "longitude": "137.4",
+        "url": "http://www.yukawanet.com/archives/4622631.html",
+        "imgurl": "http://livedoor.blogimg.jp/yukawanet/imgs/0/c/0ce20e15.jpg",
+        "imgfilename":"0ce20e15.jpg"
+    },
+    "5":{
+    	"spot": "レイタ谷",
+        "legend": "2002年春に日本国内で初めて分譲された「月の土地」です。（一・二期は販売終了、第三期好評分譲中）",
+        "latitude": "-42.5",
+        "longitude": "51.5",
+        "url": "https://the-moon.wikispaces.com/Vallis+Rheita",
+        "imgurl": "http://www.lpod.org/wp-content/uploads/2007/04/V_Rheita_07Apr22_0300LPOD.jpg",
+        "imgfilename":"V_Rheita_07Apr22_0300LPOD.jpg"
+    },
+    "6":{
+    	"spot": "雲の海",
+        "legend": "2013年9月11日に隕石の衝突と巨大閃光が確認されています。観光については慎重に検討を行うとともに，不測の事態に巻き込まれないよう十分ご注意ください。",
+        "latitude": "-17.2",
+        "longitude": "-20.5",
+        "url": "http://www.nasa.gov/mission_pages/LRO/multimedia/lroimages/lroc_20090702_a.html",
+        "imgurl": "http://www.nasa.gov/images/content/365431main_nacl000000fd_top_detail.jpg",
+        "imgfilename":"365431main_nacl000000fd_top_detail.jpg"
+    },
+    "7":{
+    	"spot": "長岡クレーター",
+        "legend": "地名は物理学者：「長岡半太郎」に由来します。他にも日本に関係した地名は複数あります。",
+        "latitude": "19.4",
+        "longitude": "154",
+        "url": "http://wms1.wms.selene.darts.isas.jaxa.jp/selene_viewer/jpn/observation_mission/tc/tc_003.html",
+        "imgurl": "http://wms1.wms.selene.darts.isas.jaxa.jp/selene_viewer/jpn/observation_mission/tc/003/tc_003_1_l.jpg",
+        "imgfilename":"tc_003_1_l.jpg"
+    },
+    "8":{
+    	"spot": "サンタマリアクレーター",
+        "legend": "2010年12月15日に、火星探査機「オポチュニティ」を使ったクレーターの観測が、初めて行われた。直径は約80-90mである。",
+        "latitude": "2.172",
+        "longitude": "5.445",
+        "url": "http://photojournal.jpl.nasa.gov/catalog/PIA13794",
+        "imgurl": "http://photojournal.jpl.nasa.gov/jpegMod/PIA13794_modest.jpg",
+        "imgfilename":"PIA13794_modest.jpg"
+    },
+    "9":{
+    	"spot": "オリンポス山",
+        "legend": "直径600km、標高25km、カルデラ直径80kmはあり、太陽系で知られている巨大火山の一つである",
+        "latitude": "18.65",
+        "longitude": "226.2",
+        "url": "http://mars.jpl.nasa.gov/gallery/atlas/olympus-mons.html",
+        "imgurl": "http://mars.jpl.nasa.gov/gallery/atlas/images/3dom.jpg",
+        "imgfilename":"3dom.jpg"
+    },
+    "10":{
+    	"spot": "マリネリス峡谷",
+        "legend": "1971年に探査機マリナー9号によって発見された。長さ4000km、幅200kmである。",
+        "latitude": "-13.9",
+        "longitude": "-59.2",
+        "url": "http://mars.jpl.nasa.gov/gallery/atlas/valles-marineris.html",
+        "imgurl": "http://mars.jpl.nasa.gov/gallery/atlas/thumb/PIA00422_th435.jpg",
+        "imgfilename":"PIA00422_th435.jpg"
+    },
+    "11":{
+    	"spot": "ゲールクレーター、キンバリー",
+        "legend": "2014年4月3日、火星探査機「キュリオシティ」から撮影された写真に、小さな光点が見つかった場所です。",
+        "latitude": "-5.2",
+        "longitude": "137.3",
+        "url": "http://www.jpl.nasa.gov/spaceimages/details.php?id=PIA18077",
+        "imgurl": "http://www.jpl.nasa.gov/spaceimages/images/mediumsize/PIA18077_ip.jpg",
+        "imgfilename":"PIA18077_ip.jpg"
+    }
+}

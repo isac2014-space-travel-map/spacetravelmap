@@ -41,6 +41,11 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 import info.izumin.android.isac2014.moverioapp.model.RequestQueueProvider;
 
+import java.io.InputStream;
+import java.io.FileInputStream;
+import java.io.IOException;
+import android.widget.ImageView;
+import android.graphics.BitmapFactory;
 
 public class MainActivity extends Activity implements View.OnTouchListener, CameraBridgeViewBase.CvCameraViewListener2 {
     private static final String TAG = MainActivity.class.getSimpleName();
@@ -61,7 +66,8 @@ public class MainActivity extends Activity implements View.OnTouchListener, Came
     @InjectView(R.id.legend) TextView legendView;
     @InjectView(R.id.latitude) TextView latitudeView;
     @InjectView(R.id.longitude) TextView longitudeView;
-    @InjectView(R.id.imageView) NetworkImageView mImageView;
+//  @InjectView(R.id.imageView) NetworkImageView mImageView;
+    @InjectView(R.id.imageView) ImageView localImageView;
 
     private CameraBridgeViewBase mCameraView;
     private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(this) {
@@ -219,7 +225,8 @@ public class MainActivity extends Activity implements View.OnTouchListener, Came
                 ", " + mBlobColorRgba.val[2] + ", " + mBlobColorRgba.val[3] + ")");
 
         mDetector.setHsvColor(mBlobColorHsv);
-        requestPoint(mDetector.getHueIndex());
+ //     requestPoint(mDetector.getHueIndex());
+        requestLocalJson(mDetector.getHueIndex());
 
         Imgproc.resize(mDetector.getSpectrum(), mSpectrum, SPECTRUM_SIZE);
 
@@ -239,7 +246,7 @@ public class MainActivity extends Activity implements View.OnTouchListener, Came
         return new Scalar(pointMatRgba.get(0, 0));
     }
 
-    private void requestPoint(int index) {
+/*    private void requestPoint(int index) {
         RequestQueueProvider.getInstance().add(
                 new JsonObjectRequest("http://spacetravelmap.smellman.org/points/" + index + ".json", null,
                         new Response.Listener<JSONObject>() {
@@ -279,6 +286,50 @@ public class MainActivity extends Activity implements View.OnTouchListener, Came
                         }
                 )
         );
+    }
+*/
+    private void requestLocalJson(int index){
+    	String imgUrl = null;
+
+        try {
+            JSONObject response = new JSONObject(loadJSONFromAsset());
+            response = response.getJSONObject(String.valueOf(index));
+            Log.d(TAG, "onResponse");
+            Log.d(TAG, response.toString());
+
+            spotView.setText(response.getString("spot"));
+            legendView.setText(response.getString("legend"));
+            latitudeView.setText("緯度 " + response.getString("latitude"));
+            longitudeView.setText("経度 " + response.getString("longitude"));
+            imgUrl = response.getString("imgfilename");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        try {
+        	InputStream is = getAssets().open(imgUrl);
+        	Bitmap bm = BitmapFactory.decodeStream(is);
+        	localImageView.setImageBitmap(bm);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    public String loadJSONFromAsset() {
+        String json = null;
+        try {
+            InputStream is = getAssets().open("sample.json");
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            json = new String(buffer, "UTF-8");
+        } catch (IOException ex) {
+            ex.printStackTrace();
+            return null;
+        }
+        return json;
+
     }
 }
 

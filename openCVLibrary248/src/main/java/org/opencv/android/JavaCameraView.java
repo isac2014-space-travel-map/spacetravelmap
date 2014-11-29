@@ -157,7 +157,8 @@ public class JavaCameraView extends CameraBridgeViewBase implements PreviewCallb
 
                     params.setExposureCompensation(-3);
                     params.set("sharpness", 7);
-                    params.setSceneMode(Camera.Parameters.SCENE_MODE_BARCODE);
+//                  params.setSceneMode(Camera.Parameters.SCENE_MODE_BARCODE);
+                    params.setSceneMode(Camera.Parameters.SCENE_MODE_AUTO);
 
                     mCamera.setParameters(params);
                     params = mCamera.getParameters();
